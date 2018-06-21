@@ -1,9 +1,9 @@
-# i3lock-upsplash
+# i3lock-unsplash
 Load a random image every hour from upsplash when locking your screen.
 
 ## Requirements
 - Python3
-- Upsplash client-id: https://unsplash.com/oauth/applications
+- Unsplash client-id: https://unsplash.com/oauth/applications
 - i3lock
 
 ## How do?
