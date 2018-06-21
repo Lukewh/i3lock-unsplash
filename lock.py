@@ -8,7 +8,7 @@ import pickle
 CONFIG_PATH = '' # full path
 PKL_FILE = CONFIG_PATH + 'wallpaper_updated.pkl'
 UPDATE_VAR = 'LAST_LOCKPAPER_UPDATE'
-UPSPLASH_CLIENT_ID = '' # unique to your application
+UNSPLASH_CLIENT_ID = '' # unique to your application
 UPDATE_INTERVAL = 3600 # once an hour
 RES_W = '1920'
 RES_H = '1080'
@@ -33,7 +33,7 @@ if not UPDATE_VAR in data or now - data[UPDATE_VAR] > UPDATE_INTERVAL:
     url = ''.join([
             'https://api.unsplash.com/photos/random',
         '?client_id=',
-        UPSPLASH_CLIENT_ID,
+        UNSPLASH_CLIENT_ID,
         '&featured=true&w=' + RES_W + '&h=' + RES_H + '&orientation=landscape',
         '&collections=' + COLLECTION])
     result = requests.get(url).json()
